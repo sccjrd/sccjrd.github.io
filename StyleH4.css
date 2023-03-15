@@ -1,0 +1,149 @@
+:root {
+  --background-color: black;
+  --font-family: 'Trebuchet MS', sans-serif;
+  --color: white;
+  --size: 28px}
+
+body
+{
+background-color: var(--background-color);
+font-family: var(--font-family) ;
+font-stretch: extra-condensed;
+font-size: var(--size);
+color: var(--color);
+}
+
+
+a
+{
+  color: var(--color);
+  align-items: center;
+  text-decoration: none;
+  font-size: 3em;
+  margin: auto
+}
+
+#SM
+{
+  width:100px;
+  height:100px;
+  position: center;
+ }
+
+#CV
+{width:90px;
+height:90px;
+position: center}
+
+#ME1{
+width:100%;
+height:fit-content;
+position: center}
+
+#L1{
+width:100%;
+height:auto;
+position: center}
+
+#EMG{}
+
+#container {
+margin-top: 3.5em;
+  display: grid;
+  grid-template-columns:
+  [c-1] minmax(90px, 90px)
+  [c-2] minmax(90px, 90px)
+  [c-3] minmax(90px, 90px)
+  [c-4] minmax(240px, 240px);
+  grid-template-rows:
+  [r-1] minmax(120px, 1fr)
+  [r-2] minmax(90px, 1fr)
+  [r-3] minmax(90px, 1fr);
+  grid-template-areas:
+  "h h h s"
+  "c a a a"
+  "e e e e";
+  grid-gap: 20px;
+  justify-content: center;
+  }
+
+#container>div{
+display: inline-flex;
+justify-content: center;}
+
+.Home{
+  border-radius: 20px;
+  border-color: white;
+  grid-area: h;
+  border: solid 10px;
+
+}
+
+.SM{
+  grid-area: s;
+}
+
+.CV{
+  grid-area: c;
+  border-color: white;
+  border-radius: 20px;
+border: solid 10px;
+background-color: white;
+}
+
+.AboutME{
+  grid-area: a;
+  border-color: white;
+  border-radius: 20px;
+border: solid 10px;
+
+}
+
+.Experience{
+  grid-area: e;
+  border-color: white;
+  border-radius: 20px;
+border: solid 10px;
+}
+
+.Back{
+grid-area: b ;}
+
+.WhoIsJordi{
+  grid-area: s ;
+}
+.ME1
+{grid-area: p;
+box-shadow: 0 0 50px 50px black inset}
+.TextME {grid-area: a}
+
+.container>div {
+display: inline-flex;
+justify-content: center;
+}
+.container{
+  display: grid;
+  grid-template-columns:
+  [c-1] minmax(120px, 120px)
+  [c-2] minmax(120px, 120px)
+  [c-3] minmax(120px, 120px)
+  [c-4] minmax(240px, 240px)
+  ;
+  grid-template-rows:
+  [r-1] minmax(90px, 1fr)
+  [r-2] minmax(90px, 1fr)
+  [r-3] minmax(90px, 1fr)
+  [r-4] minmax(90px, 1fr);
+  grid-template-areas:
+  "b s s s"
+  "p p a a"
+  "p p a a"
+"r r t t"
+"r r t t";
+  grid-gap: 20px;
+  justify-content: center;
+}
+.ME2
+{grid-area: r;
+box-shadow: 0 0 50px 50px black inset}
+.TextME2 {grid-area: t}
