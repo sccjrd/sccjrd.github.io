@@ -1,2 +1,1 @@
-# sccjrd.github.io
 # hey
